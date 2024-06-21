@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/instructions_sub_view" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/iv_image" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@mipmap/bg_main_device" android:scaleType="fitXY" android:contentDescription="@null" />
+    <LinearLayout android:orientation="horizontal" android:layout_width="560.0dip" android:layout_height="60.0dip" android:layout_marginTop="30.0dip" android:layout_centerHorizontal="true">
+        <ImageView android:id="@id/instructions_language_chinese_iv" android:background="@mipmap/icon_language_chinese" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_margin="10.0dip" android:src="@drawable/bg_language_btn" android:scaleType="fitXY" android:layout_weight="1.0" />
+        <ImageView android:id="@id/instructions_language_english_iv" android:background="@mipmap/icon_language_english" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_margin="10.0dip" android:src="@drawable/bg_language_btn" android:scaleType="fitXY" android:layout_weight="1.0" />
+        <ImageView android:id="@id/instructions_language_japanese_iv" android:background="@mipmap/icon_language_japanese" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_margin="10.0dip" android:src="@drawable/bg_language_btn" android:scaleType="fitXY" android:layout_weight="1.0" />
+        <ImageView android:id="@id/instructions_language_german_iv" android:background="@mipmap/icon_language_german" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_margin="10.0dip" android:src="@drawable/bg_language_btn" android:scaleType="fitXY" android:layout_weight="1.0" />
+        <ImageView android:id="@id/instructions_language_french_iv" android:background="@mipmap/icon_language_french" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_margin="10.0dip" android:src="@drawable/bg_language_btn" android:scaleType="fitXY" android:layout_weight="1.0" />
+        <ImageView android:id="@id/instructions_language_portuguese_iv" android:background="@mipmap/icon_language_portuguese" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_margin="10.0dip" android:src="@drawable/bg_language_btn" android:scaleType="fitXY" android:layout_weight="1.0" />
+        <ImageView android:id="@id/instructions_language_spanish_iv" android:background="@mipmap/icon_language_spanish" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_margin="10.0dip" android:src="@drawable/bg_language_btn" android:scaleType="fitXY" android:layout_weight="1.0" />
+    </LinearLayout>
+</RelativeLayout>

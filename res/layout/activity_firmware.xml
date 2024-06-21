@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@mipmap/file_bg_list" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:id="@id/firmware_setting_top_bar" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@id/firmware_setting_back" android:layout_width="40.0dip" android:layout_height="40.0dip" android:layout_margin="5.0dip" android:src="@mipmap/play_back_icon" android:layout_centerVertical="true" android:contentDescription="@null" />
+        <TextView android:textSize="@dimen/text_normal_inc" android:textColor="@color/text_black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/firmware_settings_title" android:layout_centerInParent="true" />
+    </RelativeLayout>
+    <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/firmware_setting_top_bar">
+        <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="horizontal" android:background="@drawable/bg_firmware_settings" android:layout_width="500.0dip" android:layout_height="wrap_content">
+            <TextView android:textSize="@dimen/text_small" android:textColor="@android:color/black" android:gravity="center" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/firmware_setting_ssid" android:layout_weight="2.0" />
+            <View android:background="@color/colorGray" android:layout_width="1.0dip" android:layout_height="fill_parent" />
+            <TextView android:textSize="@dimen/text_normal" android:textColor="@android:color/black" android:gravity="center" android:id="@id/firmware_setting_ssid_tv" android:background="@drawable/btn_settings_bg_selector" android:layout_width="0.0dip" android:layout_height="40.0dip" android:layout_weight="2.0" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="horizontal" android:background="@drawable/bg_firmware_settings" android:layout_width="500.0dip" android:layout_height="wrap_content" android:layout_marginTop="10.0dip">
+            <TextView android:textSize="@dimen/text_small" android:textColor="@android:color/black" android:gravity="center" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/firmware_setting_resolution" android:layout_weight="2.0" />
+            <View android:background="@color/colorGray" android:layout_width="1.0dip" android:layout_height="fill_parent" />
+            <TextView android:textSize="@dimen/text_normal" android:textColor="@android:color/black" android:gravity="center" android:id="@id/firmware_setting_resolution_tv" android:background="@drawable/btn_settings_bg_selector" android:layout_width="0.0dip" android:layout_height="40.0dip" android:layout_weight="2.0" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="horizontal" android:background="@drawable/bg_firmware_settings" android:layout_width="500.0dip" android:layout_height="wrap_content" android:layout_marginTop="10.0dip">
+            <TextView android:textSize="@dimen/text_small" android:textColor="@android:color/black" android:gravity="center" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/firmware_setting_channel" android:layout_weight="2.0" />
+            <View android:background="@color/colorGray" android:layout_width="1.0dip" android:layout_height="fill_parent" />
+            <TextView android:textSize="@dimen/text_normal" android:textColor="@android:color/black" android:gravity="center" android:id="@id/firmware_setting_channel_tv" android:background="@drawable/btn_settings_bg_selector" android:layout_width="0.0dip" android:layout_height="40.0dip" android:layout_weight="2.0" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="horizontal" android:background="@drawable/bg_firmware_settings" android:layout_width="500.0dip" android:layout_height="wrap_content" android:layout_marginTop="10.0dip">
+            <TextView android:textSize="@dimen/text_small" android:textColor="@android:color/black" android:gravity="center" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/firmware_setting_camera" android:layout_weight="2.0" />
+            <View android:background="@color/colorGray" android:layout_width="1.0dip" android:layout_height="fill_parent" />
+            <TextView android:textSize="@dimen/text_normal" android:textColor="@android:color/black" android:gravity="center" android:id="@id/firmware_setting_camera_tv" android:background="@drawable/btn_settings_bg_selector" android:layout_width="0.0dip" android:layout_height="40.0dip" android:layout_weight="2.0" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="horizontal" android:background="@drawable/bg_firmware_settings" android:layout_width="500.0dip" android:layout_height="wrap_content" android:layout_marginTop="10.0dip">
+            <TextView android:textSize="@dimen/text_small" android:textColor="@android:color/black" android:gravity="center" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/firmware_setting_keep" android:layout_weight="2.0" />
+            <View android:background="@color/colorGray" android:layout_width="1.0dip" android:layout_height="fill_parent" />
+            <TextView android:textSize="@dimen/text_normal" android:textColor="@android:color/black" android:gravity="center" android:id="@id/firmware_setting_keep_tv" android:background="@drawable/btn_settings_bg_selector" android:layout_width="0.0dip" android:layout_height="40.0dip" android:layout_weight="2.0" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="horizontal" android:background="@drawable/bg_firmware_settings" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true">
+        <TextView android:textSize="@dimen/text_normal" android:textColor="@android:color/black" android:gravity="center" android:id="@id/firmware_setting_ok" android:background="@drawable/btn_settings_bg_selector" android:layout_width="100.0dip" android:layout_height="@dimen/height_button" android:text="@string/dialog_ok" />
+    </LinearLayout>
+    <RelativeLayout android:id="@id/firmware_setting_dialog" android:background="@color/dialog_bg_white" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="200.0dip" android:layout_alignParentBottom="true">
+        <com.zyyoona7.wheel.WheelView android:id="@id/firmware_setting_wv" android:layout_width="fill_parent" android:layout_height="fill_parent" app:wv_dividerHeight="0.5dip" app:wv_lineSpacing="11.0dip" app:wv_selectedItemPosition="2" app:wv_showDivider="true" app:wv_textAlign="center" app:wv_textSize="21.0sp" />
+        <TextView android:textSize="@dimen/text_normal" android:textColor="@android:color/black" android:gravity="center" android:id="@id/firmware_setting_cancel" android:background="@drawable/button_bg_selector" android:layout_width="100.0dip" android:layout_height="@dimen/height_button" android:text="@string/dialog_cancel" />
+        <TextView android:textSize="@dimen/text_normal" android:textColor="@android:color/black" android:gravity="center" android:id="@id/firmware_setting_confirm" android:background="@drawable/button_bg_selector" android:layout_width="100.0dip" android:layout_height="@dimen/height_button" android:text="@string/dialog_ok" android:layout_alignParentEnd="true" />
+    </RelativeLayout>
+</RelativeLayout>

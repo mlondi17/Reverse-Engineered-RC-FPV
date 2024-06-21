@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/dialog_bg_white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/dialog_device_list_top_bar" android:background="@color/bar_blue" android:padding="5.0dip" android:layout_width="fill_parent" android:layout_height="50.0dip">
+        <TextView android:textSize="@dimen/text_normal" android:textColor="@color/text_white" android:id="@id/dialog_device_list_title" android:padding="3.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/item_connect" android:layout_toLeftOf="@id/dialog_device_list_close_btn" android:layout_centerVertical="true" />
+        <ImageView android:id="@id/dialog_device_list_close_btn" android:padding="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="3.0dip" android:src="@mipmap/ic_close" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:contentDescription="@string/company" />
+    </RelativeLayout>
+    <com.cooingdv.rcfpv.libs.pullrefreshview.layout.PullRefreshLayout android:id="@id/dialog_device_list_layout" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/dialog_device_list_top_bar">
+        <ListView android:id="@id/dialog_device_list_view" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <com.cooingdv.rcfpv.libs.pullrefreshview.view.ExpandHeaderView android:id="@id/dialog_device_list_header" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    </com.cooingdv.rcfpv.libs.pullrefreshview.layout.PullRefreshLayout>
+</RelativeLayout>

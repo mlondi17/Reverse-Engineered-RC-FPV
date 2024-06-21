@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <androidx.viewpager.widget.ViewPager android:gravity="center" android:id="@id/instructions_view_pager" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <ImageView android:id="@id/instructions_previous_btn" android:padding="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="3.0dip" android:src="@mipmap/ic_previous" android:layout_centerVertical="true" android:contentDescription="@string/company" />
+        <ImageView android:id="@id/instructions_next_btn" android:padding="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="3.0dip" android:src="@mipmap/ic_next" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:contentDescription="@string/company" />
+    </RelativeLayout>
+    <ImageView android:id="@id/instructions_back" android:layout_width="50.0dip" android:layout_height="50.0dip" android:layout_margin="5.0dip" android:src="@mipmap/play_back_icon" android:contentDescription="@null" />
+    <TextView android:textSize="@dimen/text_small" android:textColor="@color/text_white" android:gravity="center|right" android:id="@id/instructions_count_bar" android:padding="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:text="1/4" android:layout_alignParentBottom="true" />
+</RelativeLayout>

@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="al_exo_playback_speeds">
+        <item>0.25x</item>
+        <item>0.5x</item>
+        <item>0.75x</item>
+        <item>@string/al_exo_controls_playback_speed_normal</item>
+        <item>1.25x</item>
+        <item>1.5x</item>
+        <item>2x</item>
+    </string-array>
+    <integer-array name="al_exo_speed_multiplied_by_100">
+        <item>25</item>
+        <item>50</item>
+        <item>75</item>
+        <item>100</item>
+        <item>125</item>
+        <item>150</item>
+        <item>200</item>
+    </integer-array>
+    <string-array name="browse_file_list">
+        <item>@string/device_mode_picture</item>
+        <item>@string/device_mode_video</item>
+        <item>@string/local_mode_picture</item>
+        <item>@string/local_mode_video</item>
+        <item>@string/local_mode_record</item>
+    </string-array>
+    <string-array name="device_top_list">
+        <item>@string/tab_turn_back</item>
+        <item>@string/tab_take_photo</item>
+        <item>@string/tab_record_video</item>
+        <item>@string/tab_media_library</item>
+        <item>@string/tab_camera_switch</item>
+        <item>@string/tab_power</item>
+        <item>@string/tab_fixed_height</item>
+        <item>@string/tab_turn_180</item>
+        <item>@string/tab_control_mode</item>
+        <item>@string/tab_down_menu</item>
+    </string-array>
+    <string-array name="device_top_list_var_mode">
+        <item>@string/tab_take_photo</item>
+        <item>@string/tab_record_video</item>
+        <item>@string/tab_media_library</item>
+        <item>@string/tab_turn_back</item>
+        <item>@string/tab_take_photo</item>
+        <item>@string/tab_record_video</item>
+        <item>@string/tab_media_library</item>
+        <item>@string/tab_turn_back</item>
+    </string-array>
+    <string-array name="filter_list">
+        <item>@string/filter_artwork</item>
+        <item>@string/filter_color_blend</item>
+        <item>@string/filter_bilateral</item>
+        <item>@string/filter_sepia</item>
+        <item>@string/filter_bulge_distortion</item>
+        <item>@string/filter_color_invert</item>
+        <item>@string/filter_emboss</item>
+        <item>@string/filter_swirl</item>
+        <item>@string/filter_sketch</item>
+        <item>@string/filter_glass_sphere</item>
+    </string-array>
+    <string-array name="firmware_camera_list">
+        <item>@string/main_camera</item>
+        <item>@string/secondary_camera</item>
+    </string-array>
+    <string-array name="firmware_resolution_list">
+        <item>@string/resolution_480p</item>
+        <item>@string/resolution_720p</item>
+        <item>@string/resolution_1080p</item>
+        <item>@string/resolution_4k</item>
+    </string-array>
+    <string-array name="firmware_wifi_name_list1">
+        <item>@string/wifi_name_fpv</item>
+        <item>@string/wifi_name_ufo</item>
+    </string-array>
+    <string-array name="firmware_wifi_name_list2">
+        <item>@string/wifi_name_dufpv</item>
+        <item>@string/wifi_name_du720</item>
+        <item>@string/wifi_name_du1080</item>
+        <item>@string/wifi_name_du4k</item>
+    </string-array>
+    <string-array name="menu_item_list">
+        <item>@string/item_connect</item>
+    </string-array>
+    <string-array name="rtsp_h264_front_url">
+        <item>rtsp://%s:554/264_rt/XXX.sd</item>
+        <item>rtsp://%s:554/264_rt/XXX.hd</item>
+        <item>rtsp://%s:554/264_rt/XXX.fhd</item>
+    </string-array>
+    <string-array name="rtsp_h264_rear_url">
+        <item>rtsp://%s:554/264_rt/rear.sd</item>
+        <item>rtsp://%s:554/264_rt/rear.hd</item>
+        <item>rtsp://%s:554/264_rt/rear.fhd</item>
+    </string-array>
+    <string-array name="rtsp_jpeg_front_url">
+        <item>rtsp://%s:554/avi_rt/front.sd</item>
+        <item>rtsp://%s:554/avi_rt/front.hd</item>
+        <item>rtsp://%s:554/avi_rt/front.fhd</item>
+    </string-array>
+    <string-array name="rtsp_jpeg_rear_url">
+        <item>rtsp://%s:554/avi_rt/rear.sd</item>
+        <item>rtsp://%s:554/avi_rt/rear.hd</item>
+        <item>rtsp://%s:554/avi_rt/rear.fhd</item>
+    </string-array>
+    <string-array name="settings_list">
+        <item>@string/right_hand_mode</item>
+        <item>@string/language_setting</item>
+        <item>@string/app_declare</item>
+        <item>@string/sd_card_storage</item>
+        <item>@string/app_version</item>
+        <item>@string/icp_number</item>
+    </string-array>
+    <string-array name="settings_list_google">
+        <item>@string/right_hand_mode</item>
+        <item>@string/language_setting</item>
+        <item>@string/app_declare</item>
+        <item>@string/sd_card_storage</item>
+        <item>@string/app_version</item>
+    </string-array>
+</resources>

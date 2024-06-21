@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/colorBlack" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_alignParentTop="true" android:layout_alignParentStart="true">
+        <ImageView android:id="@id/iv_bg" android:layout_width="0.0dip" android:layout_height="fill_parent" android:src="@mipmap/bg_main_device" android:scaleType="fitXY" android:layout_weight="1.0" />
+        <ImageView android:id="@id/iv_bg2" android:layout_width="0.0dip" android:layout_height="fill_parent" android:src="@mipmap/bg_main_device" android:scaleType="fitXY" android:layout_weight="1.0" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ImageView android:id="@id/device_video_view" android:layout_width="0.0dip" android:layout_height="fill_parent" android:scaleType="fitXY" android:layout_weight="1.0" />
+        <ImageView android:id="@id/device_video_view2" android:visibility="gone" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" />
+    </LinearLayout>
+    <RelativeLayout android:id="@id/device_video_view_layout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <include android:id="@id/device_control_mode" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" layout="@layout/view_control_device_right_hand" />
+    <include android:id="@id/device_view_mode" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/device_top_bar" android:layout_alignParentStart="true" layout="@layout/view_device_mode" />
+    <include android:id="@id/device_view_down_menu" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/device_top_bar" layout="@layout/view_down_menu" />
+    <include android:id="@id/device_top_bar" android:layout_width="fill_parent" android:layout_height="55.0dip" android:layout_marginTop="10.0dip" android:layout_alignParentTop="true" android:layout_alignParentStart="true" layout="@layout/bar_device_top" />
+    <ImageView android:id="@id/device_video_mv_mode" android:visibility="gone" android:layout_width="50.0dip" android:layout_height="50.0dip" android:layout_marginTop="70.0dip" android:src="@mipmap/icon_music_red" android:scaleType="fitXY" android:contentDescription="@null" android:layout_marginStart="20.0dip" />
+    <ImageView android:id="@id/down_menu_im_gesture_type" android:visibility="gone" android:layout_width="45.0dip" android:layout_height="45.0dip" android:layout_marginTop="70.0dip" android:scaleType="fitXY" android:contentDescription="@null" android:layout_marginEnd="10.0dip" android:layout_alignParentEnd="true" />
+    <ImageView android:id="@id/device_video_gesture_iv" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" />
+    <ProgressBar android:id="@id/device_music_compose_pb" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" />
+    <LinearLayout android:orientation="vertical" android:id="@id/device_scale_seek_layout" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_alignParentStart="true">
+        <TextView android:textColor="@color/text_yellow" android:layout_gravity="center_horizontal" android:id="@id/device_view_scale_tv" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <com.cooingdv.rcfpv.libs.verticalseekbar.VerticalSeekBarWrapper android:padding="5.0dip" android:layout_width="wrap_content" android:layout_height="180.0dip">
+            <com.cooingdv.rcfpv.libs.verticalseekbar.VerticalSeekBar android:id="@id/device_view_scale_seek_progress" android:layout_width="0.0dip" android:layout_height="0.0dip" android:maxHeight="8.0dip" android:progressDrawable="@drawable/seek_bar_progress_style_1" android:minHeight="8.0dip" android:thumb="@mipmap/zoom_ball" android:thumbOffset="0.0dip" app:seekBarRotation="CW270" />
+        </com.cooingdv.rcfpv.libs.verticalseekbar.VerticalSeekBarWrapper>
+    </LinearLayout>
+</RelativeLayout>

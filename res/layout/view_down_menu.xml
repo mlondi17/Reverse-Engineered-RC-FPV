@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:descendantFocusability="blocksDescendants" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:layout_width="0.0dip" android:layout_height="1.0dip" android:layout_weight="9.0" />
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+        <ImageView android:id="@id/down_menu_btn_music" android:layout_width="45.0dip" android:layout_height="45.0dip" android:src="@drawable/drawable_music" android:scaleType="fitXY" android:contentDescription="@null" />
+        <ImageView android:id="@id/down_menu_btn_scale" android:layout_width="45.0dip" android:layout_height="45.0dip" android:layout_marginTop="10.0dip" android:src="@drawable/drawable_scale" android:scaleType="fitXY" android:contentDescription="@null" />
+    </LinearLayout>
+</LinearLayout>

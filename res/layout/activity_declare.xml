@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@mipmap/bg_setting" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@id/declare_back_btn" android:layout_width="50.0dip" android:layout_height="50.0dip" android:src="@mipmap/play_back_icon" android:layout_centerVertical="true" android:contentDescription="@null" android:layout_marginStart="5.0dip" />
+        <TextView android:textSize="@dimen/text_normal_inc" android:textColor="@color/text_white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/app_declare" android:layout_centerInParent="true" />
+    </RelativeLayout>
+    <LinearLayout android:orientation="horizontal" android:id="@id/layout_declare" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <TextView android:textSize="@dimen/text_normal_inc" android:textColor="@color/text_white" android:id="@id/declare_tv" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/string_declare1" />
+    </LinearLayout>
+    <WebView android:id="@id/declare_privacy_policy_webview" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</LinearLayout>

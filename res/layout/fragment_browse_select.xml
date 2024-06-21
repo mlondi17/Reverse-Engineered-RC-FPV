@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:background="@mipmap/file_bg_list" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+        <ImageView android:id="@id/browse_select_back" android:layout_width="50.0dip" android:layout_height="50.0dip" android:layout_margin="5.0dip" android:src="@mipmap/play_back_icon" android:contentDescription="@null" />
+        <LinearLayout android:gravity="end|center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <ImageView android:id="@id/browse_select_picture" android:layout_width="150.0dip" android:layout_height="0.0dip" android:src="@mipmap/ic_local_picture" android:layout_weight="1.0" />
+            <ImageView android:id="@id/browse_select_video" android:layout_width="150.0dip" android:layout_height="0.0dip" android:src="@mipmap/ic_local_video" android:layout_weight="1.0" />
+        </LinearLayout>
+    </RelativeLayout>
+    <RelativeLayout android:gravity="center" android:id="@id/browse_select_ad_layout" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_margin="50.0dip" android:layout_weight="2.0" />
+</LinearLayout>

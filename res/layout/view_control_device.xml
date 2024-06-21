@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="horizontal" android:descendantFocusability="blocksDescendants" android:layout_width="fill_parent" android:layout_height="fill_parent" android:baselineAligned="false"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="50.0dip" android:layout_alignParentTop="true" android:layout_alignParentStart="true">
+        <RelativeLayout android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" android:layout_marginStart="10.0dip">
+            <com.cooingdv.rcfpv.libs.RockerView android:id="@id/view_control_device_left_rocker" android:background="@mipmap/icon_control_two_directions" android:layout_width="215.0dip" android:layout_height="215.0dip" android:layout_centerInParent="true" app:areaBackground="@color/text_transparent" app:rockerBackground="@mipmap/ic_rocker" app:rockerCallBackMode="CALL_BACK_MODE_STATE_CHANGE" app:rockerScale="0.7" app:rockerSpeedLevel="10" />
+            <RelativeLayout android:id="@id/view_control_layout1" android:layout_width="200.0dip" android:layout_height="40.0dip" android:layout_marginBottom="9.0dip" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true">
+                <ImageView android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@mipmap/icon_seekbar_bg_horizontal" />
+                <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                    <View android:id="@id/view_control_device_horizontal_del" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" />
+                    <View android:id="@id/view_control_device_horizontal_add" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" />
+                </LinearLayout>
+                <com.cooingdv.rcfpv.libs.MyScaleView android:id="@id/view_control_device_horizontal_bar" android:layout_width="180.0dip" android:layout_height="fill_parent" android:layout_centerInParent="true" />
+            </RelativeLayout>
+        </RelativeLayout>
+        <RelativeLayout android:id="@id/view_control_right_rocker" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" android:layout_marginEnd="10.0dip">
+            <com.cooingdv.rcfpv.libs.RockerView android:id="@id/view_control_device_right_rocker" android:background="@mipmap/icon_control_four_directions" android:layout_width="215.0dip" android:layout_height="215.0dip" android:layout_centerInParent="true" app:areaBackground="@color/text_transparent" app:rockerBackground="@mipmap/ic_rocker" app:rockerCallBackMode="CALL_BACK_MODE_STATE_CHANGE" app:rockerScale="0.7" app:rockerSpeedLevel="10" />
+            <RelativeLayout android:id="@id/view_control_layout2" android:layout_width="200.0dip" android:layout_height="40.0dip" android:layout_marginBottom="9.0dip" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true">
+                <ImageView android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@mipmap/icon_seekbar_bg_horizontal" />
+                <LinearLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+                    <ImageView android:id="@id/view_control_device_horizontal_left" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" />
+                    <ImageView android:id="@id/view_control_device_horizontal_right" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" />
+                </LinearLayout>
+                <com.cooingdv.rcfpv.libs.MyScaleView android:id="@id/view_control_device_horizontal_center_bar" android:layout_width="180.0dip" android:layout_height="fill_parent" android:layout_centerInParent="true" />
+            </RelativeLayout>
+        </RelativeLayout>
+        <RelativeLayout android:id="@id/view_control_right_draw" android:visibility="gone" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <com.cooingdv.rcfpv.libs.TrackView android:id="@id/view_control_device_track_view" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_centerInParent="true" app:areaBackground="@color/text_transparent" app:rockerCallBackMode="CALL_BACK_MODE_STATE_CHANGE" app:rockerScale="0.2" app:rockerSpeedLevel="10" />
+        </RelativeLayout>
+    </LinearLayout>
+    <ImageView android:id="@id/view_control_device_emergency_stop" android:visibility="gone" android:layout_width="45.0dip" android:layout_height="45.0dip" android:layout_marginBottom="6.5dip" android:src="@drawable/drawable_stop" android:scaleType="fitXY" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" android:contentDescription="@null" />
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_alignParentEnd="true">
+        <View android:layout_width="1.0dip" android:layout_height="50.0dip" />
+        <RelativeLayout android:layout_width="40.0dip" android:layout_height="200.0dip">
+            <ImageView android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@mipmap/icon_seekbar_bg_vertical" />
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <View android:id="@id/view_control_device_vertical_del" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" />
+                <View android:id="@id/view_control_device_vertical_add" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" />
+            </LinearLayout>
+            <com.cooingdv.rcfpv.libs.MyScaleView android:id="@id/view_control_device_vertical_bar" android:layout_width="fill_parent" android:layout_height="180.0dip" android:layout_centerVertical="true" app:orientation="vertical" />
+        </RelativeLayout>
+    </LinearLayout>
+    <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="6.5dip" android:layout_alignParentBottom="true">
+        <ImageView android:id="@id/view_control_device_take_off" android:visibility="gone" android:layout_width="45.0dip" android:layout_height="45.0dip" android:src="@drawable/drawable_up" android:scaleType="fitXY" android:contentDescription="@null" android:layout_marginStart="2.5dip" />
+        <View android:layout_width="0.0dip" android:layout_height="0.0dip" android:layout_weight="1.0" />
+        <ImageView android:id="@id/view_control_device_land" android:visibility="gone" android:layout_width="45.0dip" android:layout_height="45.0dip" android:src="@drawable/drawable_down" android:scaleType="fitXY" android:contentDescription="@null" android:layout_marginEnd="2.5dip" />
+    </LinearLayout>
+</RelativeLayout>
